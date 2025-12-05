@@ -1,0 +1,27 @@
+<%- include("templates/encabezado.ejs", {titulo: "Inicio"})%>
+<%
+  var a = 8
+  var b = 10
+  var c = a+b
+  var texto="Esto es un texto"
+%>
+
+<%=c%>
+<a href="/informacion/<%=c%>">Enviar datos</a>
+<ul>
+  <% artistas.forEach((artista)=>{ %>
+    <li><%= artista %></li>    
+  <% }) %> 
+</ul>
+  <p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptates facere voluptate, quia quas est! 
+  Alias vel tempore sunt itaque, sint nesciunt! Similique magni laborum tempora! Quia dolorem voluptatum non.
+  </p>
+  <br>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias eius veritatis quam nobis labore suscipit ut 
+    illum eveniet, ea laborum aperiam temporibus voluptas, reprehenderit itaque alias, veniam rem iste accusamus!
+  </p>
+</div>
+
+<%- include("templates/pie.ejs")%>

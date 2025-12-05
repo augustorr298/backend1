@@ -1,0 +1,14 @@
+<%- include("templates/encabezado.ejs", {titulo: "Contactanos"})%>
+
+<form action="/contactanos" method="post">
+  <label>Nombre</label>
+  <input class="form-control mb-3" type="text" name="nombre" placeholder="Nombre">
+
+  <label>Edad</label>
+  <input class="form-control mb-3" type="text" name="edad" placeholder="Edad">
+
+
+  <button type="submit" class="btn btn-primary">Enviar Datos</button>
+</form>
+
+<%- include("templates/pie.ejs")%>
